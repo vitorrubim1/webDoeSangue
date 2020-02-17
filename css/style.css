@@ -15,8 +15,8 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
 }
-h1, h2{
-    color: #000000cc;
+h1, h2, p{
+    color: #000000ce;
 }   
 /*TÍTULOS*/
 header h1, main h2{
@@ -57,7 +57,7 @@ header button{
 }
 .logo{
     width: 120px;
-    margin: 70px 0;
+    margin: 50px 0;
 }
 header p {
     font-size: 14px;
@@ -100,7 +100,7 @@ main .donors{
     grid-template-columns: 1fr 1fr 1fr 1fr; /*DISPONIBILIZAR O MESMO TAMANHO P/ AS 4 COLUNA*/
 }
 .blood{
-    color:rgb(219, 2, 2);
+    color:rgb(255, 0, 0);
     font-weight: bold;
     font-size: 12px;
 
@@ -112,7 +112,7 @@ main .donors{
 }
 .blood::before{
     content: "";
-    background-color: #ff4f4faa;
+    background-color: #ff353591;
     width: 40px;
     height: 40px;
 
@@ -141,4 +141,16 @@ footer span{
 }
 footer .github{
     color: #000000aa;
+}
+
+/*FUNCIONALIDADES COM JAVASCRIPT*/
+section.form.hide{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+}
+
+section.form{
+    transition: all 300ms;
 }
