@@ -1,5 +1,5 @@
 {
-  "name": "MaratonaDev",
+  "name": "maratonadev",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/vitorrubim1/Web-DoeSangue#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.0"
   }
 }
