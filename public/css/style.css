@@ -26,24 +26,23 @@ header h1, main h2{
     color: #ffffffee;
     font-size: 20px;
 }
-main h2 span{
+span{
     color:#ff4f4f;
 }
 
 /*ALINHAMENTOS, ESPAÇAMENTOS, ALTURAS E LARGURAS (ESTRUTURA)*/
 header, main, footer{
-    text-align: center; /*ALINHANDO OS TEXTOS AO CENTRO*/
+    text-align: center; 
 }
 header, .form, main{
-    margin:0 auto 70px auto; /*ALINHAR E ESPAÇAR O CONTEÚDO*/
+    margin:0 auto 65px auto; 
 
-    /*LIMITE DOS ELEMENTOS*/
     width: 90%;
     max-width: 500px;
 }
 /*HEADER*/
 header button{
-    margin-top: 16px;
+    margin-top: 10px;
     padding: 8px 16px;
     border-radius: 4px;
     border:none;
@@ -55,8 +54,8 @@ header button{
     text-transform: uppercase;
 }
 .logo{
-    width: 120px;
-    margin: 50px 0;
+    width: 20vw;
+    margin: 10px 0;
 }
 header p {
     font-size: 14px;
@@ -76,9 +75,9 @@ section.form{
     border-radius: 6px;
 }
 form input, form button{
-    width: 100%;
+    width: 15vw;
     margin-bottom: 4px; 
-    padding: 8px 16px;
+    padding: 8px 10px;
     border-radius: 4px;
     border: 1px #ffffff88 solid;
 }
@@ -96,37 +95,11 @@ form button{
 /*MAIN*/
 main .donors{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /*DISPONIBILIZAR O MESMO TAMANHO P/ AS 4 COLUNA*/
+    grid-template-columns: 1fr 1fr; 
 }
-.blood{
-    color:rgb(255, 0, 0);
-    font-weight: bold;
-    font-size: 12px;
-
-    display: flex; /*PARA APARECER O PSEUDO ELEMENT BEFORE*/
-    align-items: center;
-    justify-content: center;
-
-    position: relative; /*PARA ACOMPANHAR O ABSOLUTE DO ::BEFORE*/
-}
-.blood::before{
-    content: "";
-    background-color: #ff353591;
-    width: 40px;
-    height: 40px;
-
-    position: absolute;
-
-    /*GOTINHA*/
-    border-radius: 50%;
-    border-top-right-radius:0;
-
-    transform: rotate(-45deg);/*PARA GIRAR*/
-}
-.donor p{
-    margin-top: 24px;
-    margin-bottom: 60px;
-    font-size: 14px;
+.card{
+    margin:0px 7vw 0px -4.5vw;
+    width: 50vh;
 }
 
 footer{
